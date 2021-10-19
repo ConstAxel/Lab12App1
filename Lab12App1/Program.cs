@@ -31,6 +31,8 @@ namespace Lab12App1
             Console.Write("Введите y= ");
             double y = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+            Console.WriteLine($"Длина окружности = {Сircle.CircumFerence(r):f2}");
+            Console.WriteLine($"Площадь окружности = {Сircle.AreaCircle(r):f2}");
             Сircle.CircumFerence(r);
             Сircle.AreaCircle(r);
             Сircle.InCircle(r,x0, y0,  x,  y);
@@ -38,18 +40,12 @@ namespace Lab12App1
         }
         public static class Сircle
         {
-            public static void CircumFerence(double r)
             {
 
                 double L = 2 * r * Math.PI;
-                Console.WriteLine($"Длина окружности = {L:f2}");
-                return;
             }
-            public static void AreaCircle(double r)
             {
                 double S = (Math.PI * Math.Pow(r, 2));
-                Console.WriteLine($"Площадь окружности = {S:f2}");
-                return;
             }
             public static void InCircle(double r, double x0, double y0, double x, double y)
             {
