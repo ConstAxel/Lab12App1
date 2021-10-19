@@ -42,10 +42,7 @@ namespace Lab12App1
             {
 
                 double L = 2 * r * Math.PI;
-                Console.WriteLine($"Длина окружности = {L:f2}");
-                return;
             }
-            public static void AreaCircle(double r)
             {
                 double S = (Math.PI * Math.Pow(r, 2));
                 Console.WriteLine($"Площадь окружности = {S:f2}");
