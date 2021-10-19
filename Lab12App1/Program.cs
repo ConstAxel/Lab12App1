@@ -33,7 +33,7 @@ namespace Lab12App1
             Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
             Сircle.CircumFerence(r);
             Сircle.AreaCircle(r);
-            Сircle.InCircle(r,x0, y0,  x,  y);
+            Сircle.InCircle(r, x0, y0, x, y);
             Console.ReadKey();
         }
         public static class Сircle
